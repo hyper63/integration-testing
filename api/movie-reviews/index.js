@@ -1,6 +1,6 @@
 import { z } from 'zod'
 
-const url = process.env.HYPER
+const url = process.env.HYPER || 'https://play.hyper63.com'
 const token = process.env.TOKEN
 
 const Review = z.object({
