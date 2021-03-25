@@ -1,0 +1,21 @@
+{
+  "name": "movie-reviews",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "@twilson63/test-server": "^1.0.2",
+    "dotenv": "^8.2.0",
+    "fetch-mock": "^9.11.0",
+    "tape": "^5.2.2"
+  },
+  "scripts": {
+    "test": "node -r dotenv/config test-runner.js",
+    "dev": "npx nodemon -r dotenv/config server.js"
+  }
+}
